@@ -97,3 +97,14 @@ if (cameras && cameras.length > 0) {
 ### Media capture and constraints
 
 #### Media devices
+
+- If there is a stream running and you want to change its constrens without ending the session you can use **applyConstraints()** method.
+
+- if you want to return get the current setting of the constrants of the streams then you can use **MediaStreamTrack.getSettings()** method.
+
+
+### Display media 
+If you want to screen share or record it you should use the **getDisplayMedia()** method like **navigator.mediaDevices.getDisplayMedia()**
+
+#### Streams and tracks 
+MediaStram is the stream of media which consists tracks of the audio and video and manymore.
